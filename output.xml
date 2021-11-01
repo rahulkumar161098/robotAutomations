@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.3 on win32)" generated="20211101 21:46:54.858" rpa="false" schemaversion="2">
+<suite id="s1" name="captureScreenshot" source="I:\robotAutomations\captureScreenshot.robot">
+<test id="s1-t1" name="LoginTC">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 21:46:55.471" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20211101 21:46:55.471" endtime="20211101 21:47:05.960"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211101 21:47:05.965" endtime="20211101 21:47:06.127"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 21:47:06.131" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20211101 21:47:06.129" endtime="20211101 21:47:06.380"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>Admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211101 21:47:06.382" level="INFO">Typing text 'Admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20211101 21:47:06.381" endtime="20211101 21:47:06.557"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://*[@id="divLogo"]/img</arg>
+<arg>logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20211101 21:47:06.704" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logo.png"&gt;&lt;img src="logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 21:47:06.558" endtime="20211101 21:47:06.705"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>LoginTC.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 21:47:06.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="LoginTC.png"&gt;&lt;img src="LoginTC.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 21:47:06.706" endtime="20211101 21:47:06.902"/>
+</kw>
+<status status="PASS" starttime="20211101 21:46:55.471" endtime="20211101 21:47:06.903"/>
+</test>
+<status status="PASS" starttime="20211101 21:46:54.862" endtime="20211101 21:47:06.906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="captureScreenshot">captureScreenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
