@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.3 on win32)" generated="20211124 09:33:15.926" rpa="false" schemaversion="2">
+<suite id="s1" name="DBTesting" source="I:\robotAutomations\DataBaseTesting\DBTesting.robot">
+<kw name="Connect To Database" type="SETUP">
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<msg timestamp="20211124 09:33:16.003" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<status status="FAIL" starttime="20211124 09:33:16.003" endtime="20211124 09:33:16.003"/>
+</kw>
+<test id="s1-t1" name="Create table">
+<status status="FAIL" starttime="20211124 09:33:16.003" endtime="20211124 09:33:16.005">Parent suite setup failed:
+No keyword with name 'Connect To Database' found.</status>
+</test>
+<kw name="Disconnect From Database" type="TEARDOWN">
+<msg timestamp="20211124 09:33:16.015" level="FAIL">No keyword with name 'Disconnect From Database' found.</msg>
+<status status="FAIL" starttime="20211124 09:33:16.014" endtime="20211124 09:33:16.015">No keyword with name 'Disconnect From Database' found.</status>
+</kw>
+<status status="FAIL" starttime="20211124 09:33:15.930" endtime="20211124 09:33:16.015">Suite setup failed:
+No keyword with name 'Connect To Database' found.
+
+Also suite teardown failed:
+No keyword with name 'Disconnect From Database' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="DBTesting">DBTesting</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211124 09:33:15.979" level="ERROR">Error in file 'I:\robotAutomations\DataBaseTesting\DBTesting.robot' on line 2: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\python73\Scripts\robot.exe
+  c:\python73\python37.zip
+  c:\python73\DLLs
+  c:\python73\lib
+  c:\python73
+  c:\python73\lib\site-packages</msg>
+</errors>
+</robot>
