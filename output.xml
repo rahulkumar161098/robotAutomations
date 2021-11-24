@@ -1,120 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.7.3 on win32)" generated="20211107 23:42:34.001" rpa="false" schemaversion="2">
-<suite id="s1" name="Flipkart" source="I:\robotAutomations\flipkart.robot">
-<test id="s1-t1" name="Search In Flipkart">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.flipkart.com/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211107 23:42:34.483" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
-<status status="PASS" starttime="20211107 23:42:34.482" endtime="20211107 23:42:43.176"/>
+<robot generator="Robot 4.1.2 (Python 3.7.3 on win32)" generated="20211124 13:33:26.284" rpa="false" schemaversion="2">
+<suite id="s1" name="GroupingTags" source="I:\robotAutomations\GroupingTags.robot">
+<test id="s1-t1" name="TC1 Registration">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user reg test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.338" endtime="20211124 13:33:26.339"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211107 23:42:43.177" endtime="20211107 23:42:43.343"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user reg test complete</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.340" endtime="20211124 13:33:26.340"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211107 23:42:45.362" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211107 23:42:43.352" endtime="20211107 23:42:45.363"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:q</arg>
-<arg>mobiles</arg>
-<arg>1</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211107 23:42:45.367" level="INFO">Typing text 'mobiles' into text field 'name:q'.</msg>
-<status status="PASS" starttime="20211107 23:42:45.365" endtime="20211107 23:42:45.656"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211107 23:42:45.658" level="INFO">Clicking element 'xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/button'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211107 23:42:47.095" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211107 23:42:46.794" endtime="20211107 23:42:47.095"/>
-</kw>
-<msg timestamp="20211107 23:42:47.104" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="L0Z3Pu" type="submit"&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class="_2hriZF _2rbIyg" tabindex="-1"&gt;...&lt;/div&gt;
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x0125BDE3+2473443]
-	Ordinal0 [0x011F6661+2057825]
-	Ordinal0 [0x01102438+1057848]
-	Ordinal0 [0x011327B9+1255353]
-	Ordinal0 [0x01130AE0+1247968]
-	Ordinal0 [0x0112E8AD+1239213]
-	Ordinal0 [0x0112D701+1234689]
-	Ordinal0 [0x01123567+1193319]
-	Ordinal0 [0x011456E3+1332963]
-	Ordinal0 [0x01123386+1192838]
-	Ordinal0 [0x011457CA+1333194]
-	Ordinal0 [0x01154ABF+1395391]
-	Ordinal0 [0x011455AB+1332651]
-	Ordinal0 [0x01122104+1188100]
-	Ordinal0 [0x01122F59+1191769]
-	GetHandleVerifier [0x013E2266+1549718]
-	GetHandleVerifier [0x0148D4A7+2250711]
-	GetHandleVerifier [0x012E718B+521403]
-	GetHandleVerifier [0x012E6229+517465]
-	Ordinal0 [0x011FB79D+2078621]
-	Ordinal0 [0x011FFB58+2095960]
-	Ordinal0 [0x011FFC92+2096274]
-	Ordinal0 [0x01209541+2135361]
-	BaseThreadInitThunk [0x76F0FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77A37A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x77A37A6E+238]
-</msg>
-<status status="FAIL" starttime="20211107 23:42:45.657" endtime="20211107 23:42:47.104"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20211107 23:42:47.105" endtime="20211107 23:42:47.105"/>
-</kw>
-<status status="FAIL" starttime="20211107 23:42:34.480" endtime="20211107 23:42:47.106">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="L0Z3Pu" type="submit"&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class="_2hriZF _2rbIyg" tabindex="-1"&gt;...&lt;/div&gt;
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x0125BDE3+2473443]
-	Ordinal0 [0x011F6661+2057825]
-	Ordinal0 [0x01102438+1057848]
-	Ordinal0 [0x011327B9+1255353]
-	Ordinal0 [0x01130AE0+1247968]
-	Ordinal0 [0x0112E8AD+1239213]
-	Ordinal0 [0x0112D701+1234689]
-	Ordinal0 [0x01123567+1193319]
-	Ordinal0 [0x011456E3+1332963]
-	Ordinal0 [0x01123386+1192838]
-	Ordinal0 [0x011457CA+1333194]
-	Ordinal0 [0x01154ABF+1395391]
-	Ordinal0 [0x011455AB+1332651]
-	Ordinal0 [0x01122104+1188100]
-	Ordinal0 [0x01122F59+1191769]
-	GetHandleVerifier [0x013E2266+1549718]
-	GetHandleVerifier [0x0148D4A7+2250711]
-	GetHandleVerifier [0x012E718B+521403]
-	GetHandleVerifier [0x012E6229+517465]
-	Ordinal0 [0x011FB79D+2078621]
-	Ordinal0 [0x011FFB58+2095960]
-	Ordinal0 [0x011FFC92+2096274]
-	Ordinal0 [0x01209541+2135361]
-	BaseThreadInitThunk [0x76F0FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77A37A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x77A37A6E+238]
-</status>
+<tag>sanity</tag>
+<status status="PASS" starttime="20211124 13:33:26.337" endtime="20211124 13:33:26.341"/>
 </test>
-<status status="FAIL" starttime="20211107 23:42:34.010" endtime="20211107 23:42:47.111"/>
+<test id="s1-t2" name="TC2 Login">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user log test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.343" endtime="20211124 13:33:26.344"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user log test complete</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.345" endtime="20211124 13:33:26.345"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20211124 13:33:26.342" endtime="20211124 13:33:26.346"/>
+</test>
+<test id="s1-t3" name="TC3 Change user name">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user name test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.349" endtime="20211124 13:33:26.349"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user name test complete</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.350" endtime="20211124 13:33:26.350"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20211124 13:33:26.348" endtime="20211124 13:33:26.352"/>
+</test>
+<test id="s1-t4" name="TC4">
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user logout test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.354" endtime="20211124 13:33:26.355"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>this is user logout test complete</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 13:33:26.356" endtime="20211124 13:33:26.356"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20211124 13:33:26.354" endtime="20211124 13:33:26.357"/>
+</test>
+<status status="PASS" starttime="20211124 13:33:26.287" endtime="20211124 13:33:26.360"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="3" fail="0" skip="0">sanity</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart">Flipkart</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="GroupingTags">GroupingTags</stat>
 </suite>
 </statistics>
 <errors>
